@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduPro — Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="EduPro logo" class="logo"> <span>EduPro</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="courses.html" class="nav-link">Courses</a>
+      <a href="subscribe.html" class="nav-link">Subscribe</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle3" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main class="container content">
+  <section class="courses-page">
+    <h1>Courses</h1>
+    <p class="lead">Our courses are designed to be practical and hands-on. Below are a few examples — each course contains videos, quizzes, and a final project.</p>
+
+    <div class="course-list">
+      <div class="course-item">
+        <img src="assets/course-web.svg" alt="">
+        <div>
+          <h3>Full-Stack Web Development</h3>
+          <p>Learn HTML, CSS, JavaScript, React, Node.js, and deploy real apps.</p>
+          <a class="card-link enroll-btn" href="#" data-course="Full-Stack Web Development">Enroll Now →</a>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <img src="assets/course-data.svg" alt="">
+        <div>
+          <h3>Data Science & Machine Learning</h3>
+          <p>Python, pandas, scikit-learn, and real datasets to build predictive models.</p>
+          <a class="card-link enroll-btn" href="#" data-course="Data Science & Machine Learning">Enroll Now →</a>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <img src="assets/course-cyber.svg" alt="">
+        <div>
+          <h3>Cybersecurity Fundamentals</h3>
+          <p>Network security, cryptography, and defensive techniques used in industry.</p>
+          <a class="card-link enroll-btn" href="#" data-course="Cybersecurity Fundamentals">Enroll Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Enrollment Modal ===== -->
+<div id="enrollModal" class="modal">
+  <div class="modal-content">
+    <span id="modalClose" class="close">&times;</span>
+    <h2>Enroll in Course</h2>
+    <form id="enrollForm">
+      <div class="form-row">
+        <input type="text" name="firstName" placeholder="First Name" required>
+        <input type="text" name="middleName" placeholder="Middle Name">
+        <input type="text" name="lastName" placeholder="Last Name" required>
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+      </div>
+      <div class="form-row">
+        <input type="text" id="courseName" name="course" readonly>
+        <input type="text" name="batch" placeholder="Batch" required>
+        <input type="number" name="year" placeholder="Year" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="semester" placeholder="Semester" required>
+        <input type="text" name="class" placeholder="Class" required>
+        <input type="text" name="university" placeholder="University/School Name" required>
+      </div>
+      <div class="form-row">
+        <label>Payment Method:</label>
+        <select name="payment" required>
+          <option value="">Select Method</option>
+          <option value="upi">UPI</option>
+          <option value="card">Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </div>
+      <button type="submit" class="btn primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="social">
+      <a href="#" aria-label="Facebook" title="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"></a>
+      <a href="#" aria-label="Twitter" title="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter"></a>
+      <a href="#" aria-label="Instagram" title="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="YouTube" title="YouTube"><img src="assets/icon-youtube.svg" alt="YouTube"></a>
+    </div>
+    <p>© 2025 EduPro — Learning in harmony with nature.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
